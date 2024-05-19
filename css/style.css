@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-content {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 5em;
+}
+
+.brand-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5em;
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    width: 500px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline;
+}
+
+.menu ul li a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(174, 174, 174);
+    padding: .8em;
+    font-size: 1em;
+}
+
+.menu ul li a:hover {
+
+    background-color: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+}
+
+/* Fin Header */
+
+/* Main */
+
+.main-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.peliculas, .series {
+    margin-top: 3em;
+    background-color: rgba(51, 51, 51, 0.199);
+    margin-bottom: 2em;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.473);
+    border-radius: 10px;
+}
+
+.peliculas h3, .series h3{
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 3em;
+}
+
+.card {
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+}
+
+.card-img-top {
+    width: 100%;  /* Asegura que la imagen cubra todo el ancho del contenedor */
+    height: 400px;  /* Altura fija para todas las imágenes */
+    object-fit: cover;  /* Asegura que las imágenes se redimensionen y recorten de manera adecuada */
+}
+
+.card-body {
+    height: 6em;
+    margin-bottom: -20px;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+.card-text{
+    font-size:15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* .card {
+    margin-left: auto;
+    margin-right: auto;
+} */
+/* Estilo para el overlay */
+
+.sinopsis{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(252, 5, 5, 0.944); /* Fondo oscuro semitransparente */
+    color: white;
+    opacity: 0; /* Por defecto, el overlay está oculto */
+    transition: opacity 0.5s; /* Transición suave para la opacidad */
+}
+.overlay-text {
+    color: #faf8f8;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    transform: translateY(100%); /* Inicialmente oculto debajo */
+    transition: transform 0.3s ease; /* Animación de transición */
+    margin-top: 10px;
+}
+/* Estilo para mostrar el overlay cuando se pasa el ratón sobre la imagen */
+.card:hover .overlay {
+    opacity: 1; /* Mostrar el overlay al pasar el ratón */
+}
+
+.card:hover .overlay-text {
+    transform: translateY(0); /* Mostrar texto personalizado al hacer hover en la tarjeta */
+}
+
+
+
+
+/* .card :hover {
+    background-color: rgb(170, 170, 170);
+} */
+
+.card a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.banner img{
+    width:100%;
+    border-radius: 3px;
+}
+
+.banner1 img{
+    width: 100%;
+    
+}
+/* Fin Main */
+
+/* Footer */
+
+    footer {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgb(170, 170, 170);
+    }
+
+    .copy {
+        color: white;
+    }
+
+    .legal a {
+        color: rgb(170, 170, 170);
+        text-decoration: none;
+    }
+
+    .redes p {
+        color: rgb(170, 170, 170);
+    }
+
+    .legal, .redes {
+        display: flex;
+        align-items: center; /* Alinea los elementos verticalmente */
+        justify-content: space-between; /* Distribuye el espacio horizontalmente */
+        margin-top: 1em;
+    }
+    
+    .legal p, .redes p {
+        margin: 0 10px; /* Añade un margen horizontal entre los párrafos */
+    }
+    
+    .redes a {
+        margin: 0 5px; /* Añade un margen horizontal entre los iconos */
+    }
+    
+/* Fin Footer */
+
+
+@media all and (min-width:770px) and (max-width:992px){
+    
+    
+}
+
+@media (max-width:770px) {
+
+    /* Header */
+
+    .header {
+        width: 100%;
+    }
+
+    .brand-logo {
+        width: 4em;
+    }
+    
+    .brand-name {
+        font-family: "Oswald", sans-serif;
+        font-size: 80%;
+    }
+    
+    .brand-name a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    .menu {
+        width: auto;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner1{
+        width: 100%;
+    }
+    .menu ul li a {
+        padding: .6em;
+        font-size: 80%;
+    }
+
+    /* Fin Header */
+
+    /* Main */
+
+.main-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.peliculas, .series {
+    margin-top: 3em;
+    width: 90%;
+    background-color: rgba(51, 51, 51, 0.199);
+    margin-bottom: 2em;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.473);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.peliculas h3, .series h3{
+    color: white;
+    width: 560px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.peliculas h3, .series h3 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.card-img-top {
+    width: 100%;  /* Asegura que la imagen cubra todo el ancho del contenedor */
+    height: 400px;  /* Altura fija para todas las imágenes */
+    object-fit: cover;  /* Asegura que las imágenes se redimensionen y recorten de manera adecuada */
+}
+
+.card-body {
+    height: 6em;
+}
+
+.card-text {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card :hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Fin Main */
+
+
+    /* Footer */
+
+    footer {
+        width: 580px;
+    }
+    
+    /* Fin Footer */
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* Header */
+
+    .header {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner1{
+        width: 100%;
+    }
+
+    .brand {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2em;
+    }
+
+    .brand-logo {
+        width: 3em;
+    }
+
+    .brand-name {
+        font-size: 90%;
+        width: 90%;
+    }
+
+    .menu {
+        margin-top: 1em;
+    }
+
+    .menu ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+
+    }
+    /* Fin Header */
+
+    /* Main */
+
+    .main-content {
+        width:90%;
+    }
+
+    main {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Fin Main */
+
+    /*Footer*/
+
+    footer {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .legal p, .legal a, .redes p, .redes a {
+        font-size: 90%;
+    }
+    /*Fin Footer*/
+
+}
+
+
+
+
+
+/* ************************************pagina acerda de****************************************** */
+
+
+
+.acercaDe h4{
+    color: white;
+    margin-left: 60px;
+    margin-top: 80px;
+    text-align: center;
+}
+.acerca{
+    margin: 50px 30px 160px 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-auto-rows: 200px; */
+    grid-auto-flow: dense;
+    margin: 10px 20px 60px 20px;
+}
+.gallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.gallery .tall {
+    grid-row: span 2;
+}
+
+
+.estudiantes{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
