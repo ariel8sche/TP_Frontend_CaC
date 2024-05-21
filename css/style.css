@@ -215,46 +215,53 @@
 }
 /* Fin Main */
 
-/* Footer */
+/***************** Footer ******************/
 
-    footer {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1em;
-        display: flex;
-        justify-content: space-between;
-        border-top: 1px solid rgb(170, 170, 170);
-    }
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(170, 170, 170);
+}
 
-    .copy {
-        color: white;
-    }
+.redes a{
+    transition: all .3s ease;
+}
 
-    .legal a {
-        color: rgb(170, 170, 170);
-        text-decoration: none;
-    }
+.redes a:hover{
+    transform: scale(1.5);
+}
 
-    .redes p {
-        color: rgb(170, 170, 170);
-    }
+.copy {
+    color: white;
+}
 
-    .legal, .redes {
-        display: flex;
-        align-items: center; /* Alinea los elementos verticalmente */
-        justify-content: space-between; /* Distribuye el espacio horizontalmente */
-        margin-top: 1em;
-    }
-    
-    .legal p, .redes p {
-        margin: 0 10px; /* Añade un margen horizontal entre los párrafos */
-    }
-    
-    .redes a {
-        margin: 0 5px; /* Añade un margen horizontal entre los iconos */
-    }
-    
+.legal a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+.redes p {
+    color: rgb(170, 170, 170);
+}
+
+.legal, .redes {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio horizontalmente */
+    margin-top: 1em;
+}
+
+.legal p, .redes p {
+    margin: 0 10px; /* Añade un margen horizontal entre los párrafos */
+}
+
+.redes a {
+    margin: 0 5px; /* Añade un margen horizontal entre los iconos */
+}
+
 /* Fin Footer */
 
 
