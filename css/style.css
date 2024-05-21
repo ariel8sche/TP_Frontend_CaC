@@ -15,11 +15,14 @@
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-around;
+    /* margin-bottom: 1em; */
+    padding-bottom: .5em; 
+    /* margin-top: 1em; */
+    padding-top: .5em;      /* cambió margin por padding para que no afecte al background-color */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    background-color: #000c;    /* agrego para diferenciarlo en las paginas con background-image*/
 }
 
 .brand {
