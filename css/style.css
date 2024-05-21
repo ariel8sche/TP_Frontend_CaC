@@ -544,11 +544,13 @@ main {
 }
 
 .main-content-registro {
-    height: 86vh;
+    /* height: 86vh; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 50px 0 50px;
 }
 
 
@@ -557,6 +559,7 @@ main {
     border-radius: 15px;
     box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);;
     padding: 20px 10px ;
+    
 }
 
 .formulario h2{
@@ -614,4 +617,14 @@ label {
     border-color: #8b8b8b;
     border-radius: 6px;
     color: rgb(255, 255, 255);
+}
+
+
+
+/* *******************************pagina series******************************************** */
+
+
+.series{
+    color: white;
+    text-align: center;
 }
