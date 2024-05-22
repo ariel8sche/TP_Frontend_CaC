@@ -1,6 +1,6 @@
-## Documentación
+# Documentación
 
-# Fecha Límite
+## Fecha Límite
 
 **El trabajo debe ser entregado durante la Clase 22.**
 - Corresponde a la semana que va desde el 20 al 26 de mayo. *(Se postergó)*
