@@ -101,12 +101,24 @@
                     <label for="otros"><input type="radio" id="otros" name="meeting"> CAC 4.0
                     </label>
                 </div>
+                <div id="div_calificacion">
+                    <h3>¿Qué te parece esta página? </h3> 
+                    <select name="calificacion" id="calificacion">
+                        <option value="" disabled selected>Elija una opción</option>
+                        <option value="1">Increible</option>
+                        <option value="2">Excelente</option>
+                        <option value="3">Sensacional</option>
+                        <option value="4">Aprobada 100%</option>
+                        <option value="5" disabled>No me gusta</option>
+                        
+                    </select>
+                </div>
 
                 <div>
                     <br><label for="comentarios">Comentarios: <br></label>
                     <textarea name="comentarios" id="comentarios" rows="4"></textarea>
                 </div>
-                <br>
+                
                 <label for="terminos"><input type="checkbox" id="terminos" name="terminos" required> He leído, entiendo
                     y acepto la
                     POLÍTICA DE PRIVACIDAD para ser miembro. <br><a href="#">Terminos y Condiciones</a></label> <br>

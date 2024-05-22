@@ -110,6 +110,8 @@
     margin-bottom: 2em;
     box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.473);
     border-radius: 10px;
+    color: white;
+    text-align: center;
 }
 
 .peliculas h3, .series h3{
@@ -547,6 +549,12 @@ main {
     color: white;
 }
 
+@media screen and (width<800px){
+    .acerca {
+        font-size: 1em;
+    }
+}
+
 /********** REGISTRO ***********/
 
 .body-content-registro {
@@ -623,7 +631,6 @@ tr input {
 }
 
 label {
-    text-align: justify;
     margin: 10px 10px;
     
 }
@@ -678,6 +685,25 @@ td#bd {
 
 }
 
+#div_calificacion {
+    text-align: center;
+}
+
+select {
+    background-color: #575757;
+    color: #cacaca;
+    margin-top: 15px;
+}
+
+option:disabled {
+    color: rgb(143, 143, 143)
+}
+
 #meeting {
     text-align: center;
+}
+
+textarea {
+    padding: 5px 10px;
+    
 }
