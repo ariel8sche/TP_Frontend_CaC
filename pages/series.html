@@ -5,548 +5,508 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuzCámaraCrítica</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/ico/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/ico/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/ico/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/ico/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/ico/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/ico/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/ico/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/ico/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/ico/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/ico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/ico/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/ico/favicon-16x16.png" />
+    <link rel="manifest" href="/img/ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/img/ico/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="body-content">
-    <div class="header-container container-sm .container-md .container-xl">
-        <header class="header">
-            <div class="brand">
-                <a href="../index.html"><img src="/img/logo2.png" alt="" class="brand-logo" />
-                    <div class="brand-name">
-                        <h2><span id="luz">Luz</span><span id="camara">Cámara</span><span id="critica">Crítica</span>
-                </a></h2>
-            </div>
-    </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="acercaDe.html">Acerca de</a></li>
-            <li><a href="series.html">Series</a></li>
-            <li><a href="peliculas.html">Películas</a></li>
-            <li><a href="registro.html">Registro</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <div class="brand">
+            <a href="../index.html"><img src="/img/logo2.png" alt="" class="brand-logo" />
+                <div class="brand-name">
+                    <h2><span id="luz">Luz</span><span id="camara">Cámara</span><span id="critica">Crítica</span>
+            </a></h2>
+                </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="acercaDe.html">Acerca de</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
     </header>
-    </div>
 
-    <section>
+    <main>
         <div class="series">
             <h2>Series destacadas </h2>
             <p>Lista organizada y relevada por varias plataformas </p>
         </div>
-        <div class="main-content">
-
-
-            <div class="grid-pelis">
-                <div class="row">
-                    <!-- Para Desktop -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 card1">
-                        <div class="card" style="width: 17rem">
-                            <a href="#"><img src="../img/series/breakingbad.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <p class="card-text">Breaking Bad</p>
-                                </div>
-                            </a>
-                            <div class="overlay">
-                                <p class="sinopsis">sinopsis</p>
-                                <p class="overlay-text">
-                                    Tras los sucesos de la primera parte acontecidos en el
-                                    planeta Arrakis, el joven Paul Atreides se une a la tribu
-                                    de los Fremen y comienza un viaje espiritual y marcial
-                                    para convertirse en mesías, mientras intenta evitar el
-                                    horrible pero inevitable futuro que ha presenciado: una
-                                    Guerra Santa en su nombre, que se extiende por todo el
-                                    universo conocido... Secuela de 'Dune' (2021)
-                                </p>
-                            </div>
-                        </div>
+        <div class="grid pelis">
+            <div class="card" >
+                <a href="#"><img src="../img/series/breakingbad.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Breaking Bad</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 card2">
-                        <div class="card" style="width: 17rem">
-                            <a href="">
-                                <img src="../img/series/lacasadepapel.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <p class="card-text">La casa de papel</p>
-                                </div>
-                            </a>
-                            <div class="overlay">
-                                <p class="sinopsis">sinopsis</p>
-                                <p class="overlay-text">
-                                    ¡La batalla épica continúa! La película de Legendary
-                                    Pictures continúa el explosivo enfrentamiento de "Godzilla
-                                    vs. Kong" con una aventura completamente nueva que
-                                    enfrenta al todopoderoso Kong y al temible Godzilla contra
-                                    una colosal amenaza no descubierta escondida dentro de
-                                    nuestro mundo, desafiando su propia existencia y la
-                                    nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
-                                    las historias de estos Titanes y sus orígenes, así como en
-                                    los misterios de la Isla Calavera y más allá, mientras
-                                    descubre la batalla mítica que ayudó a forjar a estos
-                                    seres extraordinarios y los unió a la humanidad para
-                                    siempre.
-                                </p>
-                            </div>
-                        </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Tras los sucesos de la primera parte acontecidos en el
+                        planeta Arrakis, el joven Paul Atreides se une a la tribu
+                        de los Fremen y comienza un viaje espiritual y marcial
+                        para convertirse en mesías, mientras intenta evitar el
+                        horrible pero inevitable futuro que ha presenciado: una
+                        Guerra Santa en su nombre, que se extiende por todo el
+                        universo conocido... Secuela de 'Dune' (2021)
+                    </p>
+                </div>
+            </div>
+            <div class="card" >
+                <a href="">
+                    <img src="../img/series/lacasadepapel.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">La casa de papel</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 card3">
-                        <div class="card" style="width: 17rem">
-                            <a href="#">
-                                <img src="../img/series/peakyblinders.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <p class="card-text">Peaky Blinders</p>
-                                </div>
-                            </a>
-                            <div class="overlay">
-                                <p class="sinopsis">sinopsis</p>
-                                <p class="overlay-text">
-                                    Verano de 1957. El expiloto de carreras Enzo Ferrari está
-                                    en crisis. La bancarrota acecha a la empresa que él y su
-                                    esposa, Laura, construyeron de la nada diez años atrás. Su
-                                    tormentoso matrimonio se encuentra en medio de una gran
-                                    crisis, mientras lidian con la muerte de su hijo. En esta
-                                    crucial etapa, Ferrari tomará decisiones arriesgadas
-                                    apostándolo todo en una única carrera que atraviesa 1.000
-                                    millas a lo largo de toda Italia: la Mille Miglia.
-                                </p>
-                            </div>
-                        </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        ¡La batalla épica continúa! La película de Legendary
+                        Pictures continúa el explosivo enfrentamiento de "Godzilla
+                        vs. Kong" con una aventura completamente nueva que
+                        enfrenta al todopoderoso Kong y al temible Godzilla contra
+                        una colosal amenaza no descubierta escondida dentro de
+                        nuestro mundo, desafiando su propia existencia y la
+                        nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
+                        las historias de estos Titanes y sus orígenes, así como en
+                        los misterios de la Isla Calavera y más allá, mientras
+                        descubre la batalla mítica que ayudó a forjar a estos
+                        seres extraordinarios y los unió a la humanidad para
+                        siempre.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="../img/series/peakyblinders.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Peaky Blinders</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 card4">
-                        <div class="card" style="width: 17rem">
-                            <a href="#"><img src="../img/series/strangerthings.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <p class="card-text">Stranger Things</p>
-                                </div>
-                            </a>
-                            <div class="overlay">
-                                <p class="sinopsis">sinopsis</p>
-                                <p class="overlay-text">
-                                    Protagonizada por Russell Crowe y Liam Hemsworth, una
-                                    operación encubierta de Fuerzas Especiales en el sur de
-                                    Filipinas se convierte en una brutal batalla de
-                                    supervivencia que se prolonga durante 48 horas. Cuando un
-                                    equipo de élite de extracción es emboscado en territorio
-                                    enemigo, el oficial novato Kinney (Hemsworth) se encuentra
-                                    superado por fuerzas hostiles, pero decide no dejar a
-                                    nadie atrás. Con un ataque aéreo acercándose, la única
-                                    esperanza de Kinney depende de las instrucciones del
-                                    piloto de drones de la Fuerza Aérea, Reaper (Crowe).
-                                    Kinney sufrirá peligros desconocidos donde cada movimiento
-                                    podría ser el último.
-                                </p>
-                            </div>
-                        </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Verano de 1957. El expiloto de carreras Enzo Ferrari está
+                        en crisis. La bancarrota acecha a la empresa que él y su
+                        esposa, Laura, construyeron de la nada diez años atrás. Su
+                        tormentoso matrimonio se encuentra en medio de una gran
+                        crisis, mientras lidian con la muerte de su hijo. En esta
+                        crucial etapa, Ferrari tomará decisiones arriesgadas
+                        apostándolo todo en una única carrera que atraviesa 1.000
+                        millas a lo largo de toda Italia: la Mille Miglia.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/strangerthings.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Stranger Things</p>
                     </div>
-                    <div class="grid-pelis">
-                        <div class="row">
-                            <!-- Para Desktop -->
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card1">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/blackmirror.jpg" class="card-img-top"
-                                            alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Black Mirror</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Tras los sucesos de la primera parte acontecidos en el
-                                            planeta Arrakis, el joven Paul Atreides se une a la tribu
-                                            de los Fremen y comienza un viaje espiritual y marcial
-                                            para convertirse en mesías, mientras intenta evitar el
-                                            horrible pero inevitable futuro que ha presenciado: una
-                                            Guerra Santa en su nombre, que se extiende por todo el
-                                            universo conocido... Secuela de 'Dune' (2021)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card2">
-                                <div class="card" style="width: 17rem">
-                                    <a href="">
-                                        <img src="../img/series/houseofcards.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">House of Cards</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            ¡La batalla épica continúa! La película de Legendary
-                                            Pictures continúa el explosivo enfrentamiento de "Godzilla
-                                            vs. Kong" con una aventura completamente nueva que
-                                            enfrenta al todopoderoso Kong y al temible Godzilla contra
-                                            una colosal amenaza no descubierta escondida dentro de
-                                            nuestro mundo, desafiando su propia existencia y la
-                                            nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
-                                            las historias de estos Titanes y sus orígenes, así como en
-                                            los misterios de la Isla Calavera y más allá, mientras
-                                            descubre la batalla mítica que ayudó a forjar a estos
-                                            seres extraordinarios y los unió a la humanidad para
-                                            siempre.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card3">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#">
-                                        <img src="../img/series/vikings.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Vikings</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Verano de 1957. El expiloto de carreras Enzo Ferrari está
-                                            en crisis. La bancarrota acecha a la empresa que él y su
-                                            esposa, Laura, construyeron de la nada diez años atrás. Su
-                                            tormentoso matrimonio se encuentra en medio de una gran
-                                            crisis, mientras lidian con la muerte de su hijo. En esta
-                                            crucial etapa, Ferrari tomará decisiones arriesgadas
-                                            apostándolo todo en una única carrera que atraviesa 1.000
-                                            millas a lo largo de toda Italia: la Mille Miglia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card4">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/LasChicasDelCable.jpg" class="card-img-top"
-                                            alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">las chicas del cable</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Protagonizada por Russell Crowe y Liam Hemsworth, una
-                                            operación encubierta de Fuerzas Especiales en el sur de
-                                            Filipinas se convierte en una brutal batalla de
-                                            supervivencia que se prolonga durante 48 horas. Cuando un
-                                            equipo de élite de extracción es emboscado en territorio
-                                            enemigo, el oficial novato Kinney (Hemsworth) se encuentra
-                                            superado por fuerzas hostiles, pero decide no dejar a
-                                            nadie atrás. Con un ataque aéreo acercándose, la única
-                                            esperanza de Kinney depende de las instrucciones del
-                                            piloto de drones de la Fuerza Aérea, Reaper (Crowe).
-                                            Kinney sufrirá peligros desconocidos donde cada movimiento
-                                            podría ser el último.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card1">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/friends.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Friends</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Tras los sucesos de la primera parte acontecidos en el
-                                            planeta Arrakis, el joven Paul Atreides se une a la tribu
-                                            de los Fremen y comienza un viaje espiritual y marcial
-                                            para convertirse en mesías, mientras intenta evitar el
-                                            horrible pero inevitable futuro que ha presenciado: una
-                                            Guerra Santa en su nombre, que se extiende por todo el
-                                            universo conocido... Secuela de 'Dune' (2021)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card2">
-                                <div class="card" style="width: 17rem">
-                                    <a href="">
-                                        <img src="../img/series/dexter.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Dexter</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            ¡La batalla épica continúa! La película de Legendary
-                                            Pictures continúa el explosivo enfrentamiento de "Godzilla
-                                            vs. Kong" con una aventura completamente nueva que
-                                            enfrenta al todopoderoso Kong y al temible Godzilla contra
-                                            una colosal amenaza no descubierta escondida dentro de
-                                            nuestro mundo, desafiando su propia existencia y la
-                                            nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
-                                            las historias de estos Titanes y sus orígenes, así como en
-                                            los misterios de la Isla Calavera y más allá, mientras
-                                            descubre la batalla mítica que ayudó a forjar a estos
-                                            seres extraordinarios y los unió a la humanidad para
-                                            siempre.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card3">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#">
-                                        <img src="../img/series/gameofthrones.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Game of Thrones</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Verano de 1957. El expiloto de carreras Enzo Ferrari está
-                                            en crisis. La bancarrota acecha a la empresa que él y su
-                                            esposa, Laura, construyeron de la nada diez años atrás. Su
-                                            tormentoso matrimonio se encuentra en medio de una gran
-                                            crisis, mientras lidian con la muerte de su hijo. En esta
-                                            crucial etapa, Ferrari tomará decisiones arriesgadas
-                                            apostándolo todo en una única carrera que atraviesa 1.000
-                                            millas a lo largo de toda Italia: la Mille Miglia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card4">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/thebigbangtheory.jpg" class="card-img-top"
-                                            alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">The big bang theory</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Protagonizada por Russell Crowe y Liam Hemsworth, una
-                                            operación encubierta de Fuerzas Especiales en el sur de
-                                            Filipinas se convierte en una brutal batalla de
-                                            supervivencia que se prolonga durante 48 horas. Cuando un
-                                            equipo de élite de extracción es emboscado en territorio
-                                            enemigo, el oficial novato Kinney (Hemsworth) se encuentra
-                                            superado por fuerzas hostiles, pero decide no dejar a
-                                            nadie atrás. Con un ataque aéreo acercándose, la única
-                                            esperanza de Kinney depende de las instrucciones del
-                                            piloto de drones de la Fuerza Aérea, Reaper (Crowe).
-                                            Kinney sufrirá peligros desconocidos donde cada movimiento
-                                            podría ser el último.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card1">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/eljuegodelcalamar.jpg" class="card-img-top"
-                                            alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">El juego del Calamar</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Tras los sucesos de la primera parte acontecidos en el
-                                            planeta Arrakis, el joven Paul Atreides se une a la tribu
-                                            de los Fremen y comienza un viaje espiritual y marcial
-                                            para convertirse en mesías, mientras intenta evitar el
-                                            horrible pero inevitable futuro que ha presenciado: una
-                                            Guerra Santa en su nombre, que se extiende por todo el
-                                            universo conocido... Secuela de 'Dune' (2021)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card2">
-                                <div class="card" style="width: 17rem">
-                                    <a href="">
-                                        <img src="../img/series/sexandthecity.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Sex and the city</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            ¡La batalla épica continúa! La película de Legendary
-                                            Pictures continúa el explosivo enfrentamiento de "Godzilla
-                                            vs. Kong" con una aventura completamente nueva que
-                                            enfrenta al todopoderoso Kong y al temible Godzilla contra
-                                            una colosal amenaza no descubierta escondida dentro de
-                                            nuestro mundo, desafiando su propia existencia y la
-                                            nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
-                                            las historias de estos Titanes y sus orígenes, así como en
-                                            los misterios de la Isla Calavera y más allá, mientras
-                                            descubre la batalla mítica que ayudó a forjar a estos
-                                            seres extraordinarios y los unió a la humanidad para
-                                            siempre.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card3">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#">
-                                        <img src="../img/series/thewalkingdead.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">The Walking Dead</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Verano de 1957. El expiloto de carreras Enzo Ferrari está
-                                            en crisis. La bancarrota acecha a la empresa que él y su
-                                            esposa, Laura, construyeron de la nada diez años atrás. Su
-                                            tormentoso matrimonio se encuentra en medio de una gran
-                                            crisis, mientras lidian con la muerte de su hijo. En esta
-                                            crucial etapa, Ferrari tomará decisiones arriesgadas
-                                            apostándolo todo en una única carrera que atraviesa 1.000
-                                            millas a lo largo de toda Italia: la Mille Miglia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card4">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/Dark.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Dark</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Protagonizada por Russell Crowe y Liam Hemsworth, una
-                                            operación encubierta de Fuerzas Especiales en el sur de
-                                            Filipinas se convierte en una brutal batalla de
-                                            supervivencia que se prolonga durante 48 horas. Cuando un
-                                            equipo de élite de extracción es emboscado en territorio
-                                            enemigo, el oficial novato Kinney (Hemsworth) se encuentra
-                                            superado por fuerzas hostiles, pero decide no dejar a
-                                            nadie atrás. Con un ataque aéreo acercándose, la única
-                                            esperanza de Kinney depende de las instrucciones del
-                                            piloto de drones de la Fuerza Aérea, Reaper (Crowe).
-                                            Kinney sufrirá peligros desconocidos donde cada movimiento
-                                            podría ser el último.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ***** -->
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card1">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/Elcuentodelacriada.jpg" class="card-img-top"
-                                            alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">El Cuento de la Criada</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Tras los sucesos de la primera parte acontecidos en el
-                                            planeta Arrakis, el joven Paul Atreides se une a la tribu
-                                            de los Fremen y comienza un viaje espiritual y marcial
-                                            para convertirse en mesías, mientras intenta evitar el
-                                            horrible pero inevitable futuro que ha presenciado: una
-                                            Guerra Santa en su nombre, que se extiende por todo el
-                                            universo conocido... Secuela de 'Dune' (2021)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card2">
-                                <div class="card" style="width: 17rem">
-                                    <a href="">
-                                        <img src="../img/series/Mindhunter.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Mindhunter</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            ¡La batalla épica continúa! La película de Legendary
-                                            Pictures continúa el explosivo enfrentamiento de "Godzilla
-                                            vs. Kong" con una aventura completamente nueva que
-                                            enfrenta al todopoderoso Kong y al temible Godzilla contra
-                                            una colosal amenaza no descubierta escondida dentro de
-                                            nuestro mundo, desafiando su propia existencia y la
-                                            nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
-                                            las historias de estos Titanes y sus orígenes, así como en
-                                            los misterios de la Isla Calavera y más allá, mientras
-                                            descubre la batalla mítica que ayudó a forjar a estos
-                                            seres extraordinarios y los unió a la humanidad para
-                                            siempre.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card3">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#">
-                                        <img src="../img/series/padredefamilia.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Padre de familia</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Verano de 1957. El expiloto de carreras Enzo Ferrari está
-                                            en crisis. La bancarrota acecha a la empresa que él y su
-                                            esposa, Laura, construyeron de la nada diez años atrás. Su
-                                            tormentoso matrimonio se encuentra en medio de una gran
-                                            crisis, mientras lidian con la muerte de su hijo. En esta
-                                            crucial etapa, Ferrari tomará decisiones arriesgadas
-                                            apostándolo todo en una única carrera que atraviesa 1.000
-                                            millas a lo largo de toda Italia: la Mille Miglia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 card4">
-                                <div class="card" style="width: 17rem">
-                                    <a href="#"><img src="../img/series/futurama.jpg" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <p class="card-text">Futurama</p>
-                                        </div>
-                                    </a>
-                                    <div class="overlay">
-                                        <p class="sinopsis">sinopsis</p>
-                                        <p class="overlay-text">
-                                            Protagonizada por Russell Crowe y Liam Hemsworth, una
-                                            operación encubierta de Fuerzas Especiales en el sur de
-                                            Filipinas se convierte en una brutal batalla de
-                                            supervivencia que se prolonga durante 48 horas. Cuando un
-                                            equipo de élite de extracción es emboscado en territorio
-                                            enemigo, el oficial novato Kinney (Hemsworth) se encuentra
-                                            superado por fuerzas hostiles, pero decide no dejar a
-                                            nadie atrás. Con un ataque aéreo acercándose, la única
-                                            esperanza de Kinney depende de las instrucciones del
-                                            piloto de drones de la Fuerza Aérea, Reaper (Crowe).
-                                            Kinney sufrirá peligros desconocidos donde cada movimiento
-                                            podría ser el último.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-    </section>
-
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Protagonizada por Russell Crowe y Liam Hemsworth, una
+                        operación encubierta de Fuerzas Especiales en el sur de
+                        Filipinas se convierte en una brutal batalla de
+                        supervivencia que se prolonga durante 48 horas. Cuando un
+                        equipo de élite de extracción es emboscado en territorio
+                        enemigo, el oficial novato Kinney (Hemsworth) se encuentra
+                        superado por fuerzas hostiles, pero decide no dejar a
+                        nadie atrás. Con un ataque aéreo acercándose, la única
+                        esperanza de Kinney depende de las instrucciones del
+                        piloto de drones de la Fuerza Aérea, Reaper (Crowe).
+                        Kinney sufrirá peligros desconocidos donde cada movimiento
+                        podría ser el último.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/blackmirror.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Black Mirror</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Tras los sucesos de la primera parte acontecidos en el
+                        planeta Arrakis, el joven Paul Atreides se une a la tribu
+                        de los Fremen y comienza un viaje espiritual y marcial
+                        para convertirse en mesías, mientras intenta evitar el
+                        horrible pero inevitable futuro que ha presenciado: una
+                        Guerra Santa en su nombre, que se extiende por todo el
+                        universo conocido... Secuela de 'Dune' (2021)
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="../img/series/houseofcards.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">House of Cards</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        ¡La batalla épica continúa! La película de Legendary
+                        Pictures continúa el explosivo enfrentamiento de "Godzilla
+                        vs. Kong" con una aventura completamente nueva que
+                        enfrenta al todopoderoso Kong y al temible Godzilla contra
+                        una colosal amenaza no descubierta escondida dentro de
+                        nuestro mundo, desafiando su propia existencia y la
+                        nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
+                        las historias de estos Titanes y sus orígenes, así como en
+                        los misterios de la Isla Calavera y más allá, mientras
+                        descubre la batalla mítica que ayudó a forjar a estos
+                        seres extraordinarios y los unió a la humanidad para
+                        siempre.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="../img/series/vikings.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Vikings</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Verano de 1957. El expiloto de carreras Enzo Ferrari está
+                        en crisis. La bancarrota acecha a la empresa que él y su
+                        esposa, Laura, construyeron de la nada diez años atrás. Su
+                        tormentoso matrimonio se encuentra en medio de una gran
+                        crisis, mientras lidian con la muerte de su hijo. En esta
+                        crucial etapa, Ferrari tomará decisiones arriesgadas
+                        apostándolo todo en una única carrera que atraviesa 1.000
+                        millas a lo largo de toda Italia: la Mille Miglia.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/LasChicasDelCable.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">las chicas del cable</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Protagonizada por Russell Crowe y Liam Hemsworth, una
+                        operación encubierta de Fuerzas Especiales en el sur de
+                        Filipinas se convierte en una brutal batalla de
+                        supervivencia que se prolonga durante 48 horas. Cuando un
+                        equipo de élite de extracción es emboscado en territorio
+                        enemigo, el oficial novato Kinney (Hemsworth) se encuentra
+                        superado por fuerzas hostiles, pero decide no dejar a
+                        nadie atrás. Con un ataque aéreo acercándose, la única
+                        esperanza de Kinney depende de las instrucciones del
+                        piloto de drones de la Fuerza Aérea, Reaper (Crowe).
+                        Kinney sufrirá peligros desconocidos donde cada movimiento
+                        podría ser el último.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/friends.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Friends</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Tras los sucesos de la primera parte acontecidos en el
+                        planeta Arrakis, el joven Paul Atreides se une a la tribu
+                        de los Fremen y comienza un viaje espiritual y marcial
+                        para convertirse en mesías, mientras intenta evitar el
+                        horrible pero inevitable futuro que ha presenciado: una
+                        Guerra Santa en su nombre, que se extiende por todo el
+                        universo conocido... Secuela de 'Dune' (2021)
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="../img/series/dexter.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Dexter</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        ¡La batalla épica continúa! La película de Legendary
+                        Pictures continúa el explosivo enfrentamiento de "Godzilla
+                        vs. Kong" con una aventura completamente nueva que
+                        enfrenta al todopoderoso Kong y al temible Godzilla contra
+                        una colosal amenaza no descubierta escondida dentro de
+                        nuestro mundo, desafiando su propia existencia y la
+                        nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
+                        las historias de estos Titanes y sus orígenes, así como en
+                        los misterios de la Isla Calavera y más allá, mientras
+                        descubre la batalla mítica que ayudó a forjar a estos
+                        seres extraordinarios y los unió a la humanidad para
+                        siempre.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="../img/series/gameofthrones.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Game of Thrones</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Verano de 1957. El expiloto de carreras Enzo Ferrari está
+                        en crisis. La bancarrota acecha a la empresa que él y su
+                        esposa, Laura, construyeron de la nada diez años atrás. Su
+                        tormentoso matrimonio se encuentra en medio de una gran
+                        crisis, mientras lidian con la muerte de su hijo. En esta
+                        crucial etapa, Ferrari tomará decisiones arriesgadas
+                        apostándolo todo en una única carrera que atraviesa 1.000
+                        millas a lo largo de toda Italia: la Mille Miglia.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/thebigbangtheory.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">The big bang theory</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Protagonizada por Russell Crowe y Liam Hemsworth, una
+                        operación encubierta de Fuerzas Especiales en el sur de
+                        Filipinas se convierte en una brutal batalla de
+                        supervivencia que se prolonga durante 48 horas. Cuando un
+                        equipo de élite de extracción es emboscado en territorio
+                        enemigo, el oficial novato Kinney (Hemsworth) se encuentra
+                        superado por fuerzas hostiles, pero decide no dejar a
+                        nadie atrás. Con un ataque aéreo acercándose, la única
+                        esperanza de Kinney depende de las instrucciones del
+                        piloto de drones de la Fuerza Aérea, Reaper (Crowe).
+                        Kinney sufrirá peligros desconocidos donde cada movimiento
+                        podría ser el último.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/eljuegodelcalamar.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">El juego del Calamar</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Tras los sucesos de la primera parte acontecidos en el
+                        planeta Arrakis, el joven Paul Atreides se une a la tribu
+                        de los Fremen y comienza un viaje espiritual y marcial
+                        para convertirse en mesías, mientras intenta evitar el
+                        horrible pero inevitable futuro que ha presenciado: una
+                        Guerra Santa en su nombre, que se extiende por todo el
+                        universo conocido... Secuela de 'Dune' (2021)
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="../img/series/sexandthecity.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Sex and the city</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        ¡La batalla épica continúa! La película de Legendary
+                        Pictures continúa el explosivo enfrentamiento de "Godzilla
+                        vs. Kong" con una aventura completamente nueva que
+                        enfrenta al todopoderoso Kong y al temible Godzilla contra
+                        una colosal amenaza no descubierta escondida dentro de
+                        nuestro mundo, desafiando su propia existencia y la
+                        nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
+                        las historias de estos Titanes y sus orígenes, así como en
+                        los misterios de la Isla Calavera y más allá, mientras
+                        descubre la batalla mítica que ayudó a forjar a estos
+                        seres extraordinarios y los unió a la humanidad para
+                        siempre.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="../img/series/thewalkingdead.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">The Walking Dead</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Verano de 1957. El expiloto de carreras Enzo Ferrari está
+                        en crisis. La bancarrota acecha a la empresa que él y su
+                        esposa, Laura, construyeron de la nada diez años atrás. Su
+                        tormentoso matrimonio se encuentra en medio de una gran
+                        crisis, mientras lidian con la muerte de su hijo. En esta
+                        crucial etapa, Ferrari tomará decisiones arriesgadas
+                        apostándolo todo en una única carrera que atraviesa 1.000
+                        millas a lo largo de toda Italia: la Mille Miglia.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/Dark.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Dark</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Protagonizada por Russell Crowe y Liam Hemsworth, una
+                        operación encubierta de Fuerzas Especiales en el sur de
+                        Filipinas se convierte en una brutal batalla de
+                        supervivencia que se prolonga durante 48 horas. Cuando un
+                        equipo de élite de extracción es emboscado en territorio
+                        enemigo, el oficial novato Kinney (Hemsworth) se encuentra
+                        superado por fuerzas hostiles, pero decide no dejar a
+                        nadie atrás. Con un ataque aéreo acercándose, la única
+                        esperanza de Kinney depende de las instrucciones del
+                        piloto de drones de la Fuerza Aérea, Reaper (Crowe).
+                        Kinney sufrirá peligros desconocidos donde cada movimiento
+                        podría ser el último.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/Elcuentodelacriada.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">El Cuento de la Criada</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Tras los sucesos de la primera parte acontecidos en el
+                        planeta Arrakis, el joven Paul Atreides se une a la tribu
+                        de los Fremen y comienza un viaje espiritual y marcial
+                        para convertirse en mesías, mientras intenta evitar el
+                        horrible pero inevitable futuro que ha presenciado: una
+                        Guerra Santa en su nombre, que se extiende por todo el
+                        universo conocido... Secuela de 'Dune' (2021)
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="../img/series/Mindhunter.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Mindhunter</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        ¡La batalla épica continúa! La película de Legendary
+                        Pictures continúa el explosivo enfrentamiento de "Godzilla
+                        vs. Kong" con una aventura completamente nueva que
+                        enfrenta al todopoderoso Kong y al temible Godzilla contra
+                        una colosal amenaza no descubierta escondida dentro de
+                        nuestro mundo, desafiando su propia existencia y la
+                        nuestra. "Godzilla y Kong: El nuevo imperio" profundiza en
+                        las historias de estos Titanes y sus orígenes, así como en
+                        los misterios de la Isla Calavera y más allá, mientras
+                        descubre la batalla mítica que ayudó a forjar a estos
+                        seres extraordinarios y los unió a la humanidad para
+                        siempre.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="../img/series/padredefamilia.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Padre de familia</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Verano de 1957. El expiloto de carreras Enzo Ferrari está
+                        en crisis. La bancarrota acecha a la empresa que él y su
+                        esposa, Laura, construyeron de la nada diez años atrás. Su
+                        tormentoso matrimonio se encuentra en medio de una gran
+                        crisis, mientras lidian con la muerte de su hijo. En esta
+                        crucial etapa, Ferrari tomará decisiones arriesgadas
+                        apostándolo todo en una única carrera que atraviesa 1.000
+                        millas a lo largo de toda Italia: la Mille Miglia.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="../img/series/futurama.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Futurama</p>
+                    </div>
+                </a>
+                <div class="overlay">
+                    <p class="sinopsis">sinopsis</p>
+                    <p class="overlay-text">
+                        Protagonizada por Russell Crowe y Liam Hemsworth, una
+                        operación encubierta de Fuerzas Especiales en el sur de
+                        Filipinas se convierte en una brutal batalla de
+                        supervivencia que se prolonga durante 48 horas. Cuando un
+                        equipo de élite de extracción es emboscado en territorio
+                        enemigo, el oficial novato Kinney (Hemsworth) se encuentra
+                        superado por fuerzas hostiles, pero decide no dejar a
+                        nadie atrás. Con un ataque aéreo acercándose, la única
+                        esperanza de Kinney depende de las instrucciones del
+                        piloto de drones de la Fuerza Aérea, Reaper (Crowe).
+                        Kinney sufrirá peligros desconocidos donde cada movimiento
+                        podría ser el último.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="legal">
@@ -566,9 +526,6 @@
             <a href="#"><i class="fa-brands fa-github" style="color: #ffffff"></i></a>
         </div>
     </footer>
-
-
-
 
     <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/28b1a5ddfd.js" crossorigin="anonymous"></script>
