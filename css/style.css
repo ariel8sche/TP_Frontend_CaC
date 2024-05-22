@@ -59,15 +59,20 @@
 .brand-name {
     font-family: "Oswald", sans-serif;
     font-size: 1.5em;
+    color: rgb(255, 255, 255);
 }
 
 .brand-name a {
     text-decoration: none;
-    color: white;  
+    color: rgb(255, 255, 255);  
 }
 
 .menu {
     width: 500px;
+}
+
+.menu ul {
+    margin: auto;
 }
 
 .menu ul li {
@@ -80,13 +85,14 @@
     text-decoration: none;
     display: inline-block;
     color: rgb(174, 174, 174);
-    padding: .8em;
+    padding: .9em;
     font-size: 1em;
 }
 
 .menu ul li a:hover {
 
     background-color: rgb(201, 201, 201);
+    border-radius: 15%;
     color: rgb(0, 0, 0);
 }
 
