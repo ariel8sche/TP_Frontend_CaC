@@ -60,19 +60,28 @@
     <div class="formulario">
       <form id="registro" action="" method="post">
         <h2>Formulario de Registro</h2>
-        <div>
-          <label for="name">Nombre: <input type="text" id="name" name="name"></label>
-          <label for="surname">Apellido: <input type="text" id="surname" name="surname"></label>
-        </div>
-        <div>
-          <label for="user">Usuario: <input type="text" id="user" name="user"></label>
-          <label for="password">Contraseña: <input type="password" id="password" name="password"></label>
-        </div>
-        <div>
-          <label for="mail">Correo: <input type="email" id="mail" name="mail"></label>
-          <label for="brith">Fecha de nacimiento: <input type="date" id="birth" name="birth"></label>
-        </div>
-        <div>
+        <table>
+          <tr>
+            <div>
+              <td>Nombre:</td><td><input type="text" id="name" name="name"></td>
+              <td>Apellido:</td><td><input type="text" id="surname" name="surname"></td>
+            </div>
+          </tr>
+          <tr>
+            <div>
+              <td> Usuario:</td><td><input type="text" id="user" name="user"></td>
+              <td> Contraseña:</td><td><input type="password" id="password" name="password"></td>
+            </div>
+          </tr>
+          <tr>
+            <div>
+              <td> Correo:</td><td><input type="email" id="mail" name="mail"></td>
+              <td id="bd"> Fecha de <br> nacimiento:</td><td id="bdi"><input class="bd" type="date" id="birth" name="birth"></td>
+            </div>
+          </tr>
+        </table>
+
+        <div id="meeting">
           <h3>¿Donde nos conociste?</h3>
           <label for="recomendacion"><input type="radio" id="recomendacion" name="meeting"> Recomendación
           </label>
@@ -90,10 +99,11 @@
           <br><label for="comentarios">Comentarios: <br></label>
           <textarea name="comentarios" id="comentarios" rows="4"></textarea>
         </div>
+        <br>
         <label for="terminos"><input type="checkbox" id="terminos" name="terminos" required> He leído, entiendo y acepto la
           POLÍTICA DE PRIVACIDAD para ser miembro. <br><a href="#">Terminos y Condiciones</a></label> <br>
         <div class="div-boton-registro">
-          <button class="boton_registro" type="submit">Registrar</button><br>
+          <button class="boton_registro" type="submit">Registrar</button>
         </div>
       </form>
     </div>

@@ -553,10 +553,30 @@ main {
 
 
 .formulario{
+    width: 50vw;
+    max-width: 600px;
     background-color: #333d;
     border-radius: 15px;
     box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);;
     padding: 20px 10px ;
+}
+
+@media screen and (width < 900px) {
+    .formulario{
+        width: 70vw;
+    }
+}
+
+@media screen and (width < 700px) {
+    .formulario{
+        width: 90vw;
+    }
+}
+
+@media screen and (width < 480px) {
+    .formulario {
+        font-size: smaller;
+    }
 }
 
 .formulario h2{
@@ -575,11 +595,16 @@ main {
 }
 
 input {
+    /* width: 100%; */
     background:none;
     color: white;
     border: none;
     border-bottom: 1px solid #8b8b8b63;
     outline: 0;
+}
+
+tr input {
+    width: 100%;
 }
 
 label {
@@ -614,4 +639,30 @@ label {
     border-color: #8b8b8b;
     border-radius: 6px;
     color: rgb(255, 255, 255);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 7px 3px;
+    vertical-align: top;
+}
+
+td#bd {
+    vertical-align: bottom;
+    padding: 0 5px;
+    line-height: 1;
+}
+
+#bdi {
+    text-align: center;
+
+}
+
+#meeting {
+    text-align: center;
 }
