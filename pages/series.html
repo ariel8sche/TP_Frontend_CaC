@@ -35,20 +35,38 @@
 
 <body class="body-content">
     <header class="header">
-        <div class="brand">
-            <a href="../index.html"><img src="../img/logo2.png" alt="" class="brand-logo"></a>
-            <div class="brand-name">
-                <a href="../index.html"><h2><span id="luz">Luz</span><span id="camara">Cámara</span><span id="critica">Crítica</span></h2></a>
+        <nav>
+            <div class="brand">
+                <a href="../index.html"><img src="../img/logo2.png" alt="" class="brand-logo"></a>
+                <div class="brand-name">
+                    <a href="../index.html"><h2><span id="luz">Luz</span><span id="camara">Cámara</span><span id="critica">Crítica</span></h2></a>
+                </div>
             </div>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="acercaDe.html">Acerca de</a></li>
-                <li><a href="series.html">Series</a></li>
-                <li><a href="peliculas.html">Películas</a></li>
-                <li><a href="registro.html">Registro</a></li>
-            </ul>
+
+            <!-- Navegador escritorio -->
+
+                <ul class="nav_links desktop_nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="acercaDe.html">Acerca de</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+
+            <!-- Navegador hamburguesa -->
+
+                <input type="checkbox" id="menu_toggle" class="menu_toggle">
+                <label for="menu_toggle" class="menu_toggle_icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav_links mobile_nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="acercaDe.html">Acerca de</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+
         </nav>
     </header>
 
@@ -508,22 +526,27 @@
 
     <footer>
         <div class="legal">
-            <p class="copy">
-                Copyright &copy; 2024 Todos los derechos reservados
-            </p>
-            <p><a href="#">Terminos y Condiciones</a></p>
-            <p><a href="#">Privacidad</a></p>
+                <p class="copy">
+                    Copyright &copy; 2024 Todos los derechos reservados
+                </p>
+                <div class="legal-links">
+                    <p><a href="#">Términos y Condiciones</a></p>
+                    <p><a href="#">Privacidad</a></p>
+                </div>
         </div>
         <div class="redes">
             <p>LuzCámaraCrítica@gmail.com</p>
-            <a href="#"><i class="fa fa-envelope-o" style="color: #ffffff"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
-            <a href="#"><i class="fa-brands fa-github" style="color: #ffffff"></i></a>
+            <div class="social_links">
+                <a href="#"><i class="fa fa-envelope-o" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-github" style="color: #ffffff"></i></a>
+            </div>
         </div>
     </footer>
+
 
     <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/28b1a5ddfd.js" crossorigin="anonymous"></script>

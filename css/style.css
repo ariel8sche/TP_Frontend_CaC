@@ -12,13 +12,19 @@
 
 .header {
     width: 100%;
-    height: auto;
+    background-color: rgb(0, 0, 0);  
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: .5em; 
-    padding-top: .5em;      /* cambió margin por padding para que no afecte al background-color */
-    background-color: #0008;    /* agrego para diferenciarlo en las paginas con background-image*/
+    padding: 0 30px;
+    height: 100px;
 }
 
 .brand {
@@ -67,34 +73,63 @@
     color: rgb(255, 255, 255);  
 }
 
-.menu {
-    width: 500px;
-}
-
-.menu ul {
-    margin: auto;
-}
-
-.menu ul li {
+.nav_links {
+    display: flex;
     list-style: none;
-    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 25px;
 }
 
-.menu ul li a {
+.nav_links li {
+    padding: 10px;
+}
+
+.nav_links a {
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    display: inline-block;
     color: rgb(174, 174, 174);
-    padding: .9em;
+    padding: .8em;
     font-size: 1em;
 }
 
-.menu ul li a:hover {
-
+.nav_links a:hover {
     background-color: rgb(201, 201, 201);
-    border-radius: 15%;
+    border-radius: 20%;
     color: rgb(0, 0, 0);
 }
+
+.menu_toggle {
+    display: none;
+}
+
+.menu_toggle_icon {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+}
+
+.mobile_nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    color: #fff;
+}
+
+.mobile_nav li {
+    margin: 10px;
+    padding: 5px;
+}
+
+.menu_toggle:checked~.mobile_nav {
+    display: flex;
+}
+
 
 /* Fin Header */
 
@@ -240,6 +275,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     border-top: 1px solid rgb(170, 170, 170);
+    background-color: #000;
 }
 
 .redes a{
@@ -280,7 +316,99 @@ footer {
 
 /* Fin Footer */
 
-@media screen and (width<600px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav_links {
+        gap: 8px; /* Ajusta el espacio entre elementos <li> */
+    }
+
+    .nav_links li {
+        padding: 3px 5px; /* Ajusta el relleno de los elementos <li> */
+    }
+
+    .nav_links a {
+        font-size: .8em; /* Ajusta el tamaño de fuente de los enlaces */
+    }
+
+    .nav_links a:hover {
+        background-color: rgb(174, 174, 174); /* Cambia el color de fondo en hover */
+        border-radius: 5px; /* Redondea un poco los bordes */
+        color: rgb(255, 255, 255); /* Cambia el color del texto en hover */
+    }
+
+    .brand-logo {
+        width: 3em;
+    }
+    
+    .brand-name {
+        font-family: "Oswald", sans-serif;
+        font-size: .8em;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .desktop_nav {
+        display: none;
+    }
+
+    .nav_links a:hover {
+        background-color: transparent;
+        border-radius: 0%;
+        color: rgb(255, 255, 255);
+    }
+
+    .menu_toggle_icon {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .legal, .redes {
+        width: 100%;
+    }
+
+    .legal p, .redes p, .redes a {
+        margin: 5px 0;
+    }
+
+    .legal {
+        font-size: 0.8em;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .redes a {
+        margin: 5px 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .desktop_nav {
+        display: none;
+    }
+
+    .nav_links a:hover {
+        background-color: transparent;
+        border-radius: 0%;
+        color: rgb(255, 255, 255);
+    }
+
+    .menu_toggle_icon {
+        display: block;
+    }
+
     .peliculas h3 {
         font-size: 2em;
     }
@@ -292,6 +420,36 @@ footer {
     .brand-logo {
         width: 3.5em;
     }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .legal, .redes {
+        width: 100%;
+    }
+
+    .legal p, .redes p, .redes a {
+        margin: 5px 0;
+    }
+
+    .legal {
+        font-size: 0.8em;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .redes a {
+        margin: 5px 10px;
+    }
+
 }
 
 
@@ -381,7 +539,7 @@ footer {
 /********** REGISTRO ***********/
 
 .body-content-registro {
-    background-image: url(/img/acercade/background-collage-portait.jpg.png);
+    background-color: #000;
     background-size: cover;
     color: rgb(161, 161, 161)
     
@@ -394,6 +552,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 50px 0 50px;
+    background-image: url(/img/acercade/background-collage-portait.jpg.png);
 }
 
 

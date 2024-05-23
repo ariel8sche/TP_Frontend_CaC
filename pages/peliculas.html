@@ -35,21 +35,71 @@
 
 <body class="body-content">
     <header class="header">
-        <div class="brand">
-            <a href="../index.html"><img src="../img/logo2.png" alt="" class="brand-logo"></a>
-            <div class="brand-name">
-                <a href="../index.html"><h2><span id="luz">Luz</span><span id="camara">Cámara</span><span id="critica">Crítica</span></h2></a>
+        <nav>
+            <div class="brand">
+                <a href="../index.html"><img src="../img/logo2.png" alt="" class="brand-logo"></a>
+                <div class="brand-name">
+                    <a href="../index.html"><h2><span id="luz">Luz</span><span id="camara">Cámara</span><span id="critica">Crítica</span></h2></a>
+                </div>
             </div>
-        </div>
-        
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="acercaDe.html">Acerca de</a></li>
-                <li><a href="series.html">Series</a></li>
-                <li><a href="peliculas.html">Películas</a></li>
-                <li><a href="registro.html">Registro</a></li>
-            </ul>
+
+            <!-- Navegador escritorio -->
+
+                <ul class="nav_links desktop_nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="acercaDe.html">Acerca de</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+
+            <!-- Navegador hamburguesa -->
+
+                <input type="checkbox" id="menu_toggle" class="menu_toggle">
+                <label for="menu_toggle" class="menu_toggle_icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav_links mobile_nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="acercaDe.html">Acerca de</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+
         </nav>
     </header>
+    <footer>
+        <div class="legal">
+                <p class="copy">
+                    Copyright &copy; 2024 Todos los derechos reservados
+                </p>
+                <div class="legal-links">
+                    <p><a href="#">Términos y Condiciones</a></p>
+                    <p><a href="#">Privacidad</a></p>
+                </div>
+        </div>
+        <div class="redes">
+            <p>LuzCámaraCrítica@gmail.com</p>
+            <div class="social_links">
+                <a href="#"><i class="fa fa-envelope-o" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
+                <a href="#"><i class="fa-brands fa-github" style="color: #ffffff"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/28b1a5ddfd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
 </body>
