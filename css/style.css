@@ -278,11 +278,11 @@ footer {
     background-color: #000;
 }
 
-.redes a{
+.redes i{
     transition: all .3s ease;
 }
 
-.redes a:hover{
+.redes i:hover{
     transform: scale(1.5);
 }
 
@@ -312,6 +312,10 @@ footer {
 
 .redes a {
     margin: 0 5px; /* Añade un margen horizontal entre los iconos */
+}
+
+.social_links i{
+    color: #fff
 }
 
 /* Fin Footer */
@@ -540,7 +544,6 @@ footer {
 
 .body-content-registro {
     background-color: #000;
-    background-size: cover;
     color: rgb(161, 161, 161)
     
 }
@@ -551,14 +554,16 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 0 50px;
+    padding: 50px 0;
     background-image: url(/img/acercade/background-collage-portait.jpg.png);
+    background-size: cover;
 }
 
 
 .formulario{
     width: 50vw;
     max-width: 600px;
+    min-width: 350px;
     background-color: #333d;
     border-radius: 15px;
     box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);;
