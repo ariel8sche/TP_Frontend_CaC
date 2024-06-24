@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto Flex", "Open Sans", sans-serif;
 }
 
 a {
@@ -105,7 +105,7 @@ nav {
 
 .nav_links a:hover {
     background-color: rgb(201, 201, 201);
-    border-radius: 20%;
+    border-radius: 10px;
     color: rgb(0, 0, 0);
 }
 
@@ -218,9 +218,10 @@ nav {
 }
 
 .card-text{
-    font-size:14px;
+    font-size:18px;
     text-align: center;
     font-weight: bold;
+    
 }
 
 /* .card {
@@ -236,12 +237,15 @@ nav {
 }
 
 .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(252, 5, 5, 0.944);
+    background-color: rgba(150, 0, 0, 0.9);
     color: white;
     opacity: 0;
     transition: opacity 0.5s;
@@ -250,7 +254,7 @@ nav {
 .overlay-text {
     color: #faf8f8;
     font-size: 0.8rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
     padding: 10px;
     margin-bottom: 5px;
@@ -260,7 +264,12 @@ nav {
     overflow: auto;
     max-height: 400px;
     box-sizing: border-box;
+    
 
+}
+
+.overlay-text b {
+    font-size: 1.3em;
 }
 
 /* Ocultar la barra de desplazamiento en navegadores WebKit */
@@ -299,6 +308,27 @@ nav {
 .banner1 img{
     width: 100%;
     
+}
+
+#boton_siguiente {
+    margin: 30px;
+}
+
+#buscarSeries{
+    border: 1px solid #333;
+    height: 3em;
+    width: 40%;
+    margin-bottom: 1em;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+
+.icon{
+    position: relative;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white
 }
 /* Fin Main */
 
@@ -457,15 +487,19 @@ footer {
     }
 
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(200px,100%),1fr));
-        grid-template-rows: repeat(auto-fit, minmax(177px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(180px,100%),1fr));
+        /* grid-template-rows: repeat(auto-fit, minmax(200px,1fr)); */
         grid-auto-flow: dense;
     }
 
     .card {
         width: 12rem;
+        height: 22rem;
     }
 
+    .card-text{
+        font-size: 14px;
+    }
     .overlay-text {
         font-size: .7em;
     }
@@ -473,6 +507,8 @@ footer {
     .card-img-top {
         height: 300px;  /* Altura fija para todas las imágenes */
     }
+
+    
 
 }
 
@@ -533,12 +569,55 @@ footer {
         margin: 5px 10px;
     }
 
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(105px,100%),1fr));
+        /* grid-template-rows: repeat(auto-fit, minmax(200px,1fr)); */
+        grid-auto-flow: dense;
+    }
+    .card {
+        width: 120px;
+        height: 215px;
+        
+    }
+    .card-img-top {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .card-body {
+        /* height: 6.5em; */
+        margin-bottom: -20px;
+        padding: 5px;
+    }
+    
+    .card-title{
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .card-text{
+        font-size:12px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .overlay-text {
+        font-size: .6em;
+        font-family: "Roboto Condensed";
+        line-height: 1;
+        padding-left: 0;
+        padding-right: 0;
+        /* display: none; */
+    }
+
 }
 
 
 
 
-/* ************************************pagina acerda de****************************************** */
+
+/******************  ACERCA DE  ********************/
 
 .acercaDe {
     display: flex;
@@ -566,7 +645,7 @@ footer {
 }
 
 .about {
-    background-image: url(../img/acercade/movie-background-collage.jpg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)),url(../img/acercade/movie-background-collage.jpg.png);
     background-size: cover;
 }
 
@@ -683,7 +762,6 @@ footer {
     text-align: center;
     color: #f8f8f8;
     padding-bottom: 20px;
-    font-weight: 300;
     text-shadow: 1px 1px 2px #000;
 }
 
@@ -788,4 +866,223 @@ option:disabled {
 textarea {
     padding: 5px 10px;
     
+}
+
+
+/****************** DETALLES ***************/
+
+.series-detalles {
+    /* margin: 0 auto; */
+    max-width: 1200px;
+    /* margin-top: 3em;
+    margin-bottom: 2em; */
+    margin: 3em 1% 8em;
+    background-color: #3333;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.473);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    }
+    
+#main_detalles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+        
+.main-header-detalles {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    /* min-height: 50vh;  */
+    
+    /* background-color: #3333; */
+    /* max-width: 960px; */
+}
+
+#detalles {
+    display: flex;
+    flex-direction: row;
+    text-shadow: 2px 2px 1px #333;
+    backdrop-filter: 10px;
+    padding: 10px;
+}
+
+#detalles img {
+    border-radius: 10px;
+    /* min-width: 200px; */
+    max-height: 30em;
+    max-width: 60%;
+    object-fit: scale-down;
+}
+
+#detalles h2 {
+    padding-top: 0;
+    font-size: 2em;
+}
+
+.detalles-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles-flex p{
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+.url{
+    padding: 6px 0;
+    line-height: 1.25;
+}
+
+
+
+.serie_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 10px 20px;
+}
+.overview {
+    /* min-height: 350px; */
+    margin-bottom: 10px;
+    text-align: justify;
+    backdrop-filter: blur(1em);
+    border-radius: 8px;
+}
+
+.logo_imdb{
+    margin: 8px 0;
+}
+aside {
+    padding: 10px;
+    max-width: 300px;
+}
+#similares {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(90px,50%), 1fr));
+    gap: 10px;
+    /* margin: 20px; */
+}
+
+#similares img {
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+
+.card-similares {
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    /* max-width: 100px; */
+    /* margin-bottom: 20px; */
+}
+
+
+.card-similares:hover .overlay-similares {
+    opacity: 1; /* Mostrar el overlay al pasar el mouse */
+}
+
+.card-similares:hover .overlay-text {
+    transform: translateY(0); /* Mostrar texto personalizado al hacer hover en la tarjeta */
+}
+
+.overlay-similares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(150, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 7px;
+    /* max-width: 100px; */
+}
+
+.overlay-similares p{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 960px){
+    .serie_flex{
+        /* min-height: 350px; */
+        font-size: small;
+    }
+    #detalles img {
+        max-height: 20em;
+        max-width: 60%;
+
+    }
+    #similares {
+        grid-template-columns: repeat(auto-fill, minmax(min(70px,100%), 1fr));
+    }
+    #similares img {
+        width: calc(100px * 0.7);
+        height: calc(150px * 0.7);
+    }
+    aside {
+        padding: 10px;
+        max-width: 200px;
+    }
+    aside h4{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .main-header-detalles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* min-height: 50vh;  */
+        
+        /* background-color: #3333; */
+        /* max-width: 960px; */
+    }
+    #similares {
+        display: flex;
+    }
+    aside {
+        max-width: 100%;
+
+    }
+    aside h4{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #detalles img {
+        max-height: 10em;
+        /* max-width: 30%; */
+
+    }
+    #similares {
+        flex-wrap: wrap;
+    }
+    .serie_flex {
+        margin: 5px;
+    }
+    #detalles {
+        padding: 3px;
+    }
+    .buscador{
+        font-size: 12px;
+    }
 }

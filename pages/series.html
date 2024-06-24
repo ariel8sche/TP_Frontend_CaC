@@ -74,9 +74,10 @@
             <div class="main-header">
                 <h2>Series</h2>
                 <p>Lista organizada y relevada por varias plataformas </p>
+                <div class="buscador"><input id="buscarSeries" type="search" placeholder="Búsqueda por título"></input><button id="botonBuscar" class="icon"><i class="fas fa-search"></i></button></div>
             </div>
-            <div class="grid">
-                <div class="card" >
+            <div class="grid" id="popular-list">
+                <!-- <div class="card" >
                     <a href="#"><img src="../img/series/breakingbad.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Breaking Bad</p>
@@ -520,8 +521,10 @@
                             podría ser el último.
                         </p>
                     </div>
-                </div>
-            </div>  
+                </div> -->
+            </div>
+            <button class="btn btn-dark" id="boton_siguiente">Cargar mas</button>
+
         </div>
     </main>
 
@@ -549,7 +552,7 @@
     </footer>
 
 
-    <script src="js/index.js"></script>
+    <script src="../js/series.js"></script>
     <script src="https://kit.fontawesome.com/28b1a5ddfd.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
